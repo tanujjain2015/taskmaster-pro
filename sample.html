@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <button id="btn1">VegBurger</button>
+        <button id="btn2">CheeseBurger</button>
+        <button id="btn3">FingerCheese</button>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- add the js file here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $("#btn1").on("click",function(){
+            alert("This is Good.");
+            //$('.container').append('p').add('this is a test');
+            //$(".container").parent().after.add('p').
+
+            var ele = window.document.createElement('p');
+            ele.textContent = "This is test syntax";
+            $('.container').append(ele);
+
+            
+            //var main_container = document.querySelector(".container");
+            //main_container.appendChild(ele);
+
+        }
+        )
+    </script>
+</body>
+</html>
